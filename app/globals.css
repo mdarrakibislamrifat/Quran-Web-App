@@ -1,31 +1,30 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Scheherazade+New:wght@400;700&display=swap');
 @import "tailwindcss";
 
-/* Google Fonts Import */
-@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Scheherazade+New:wght@400;700&display=swap');
 
 @layer base {
   :root {
-    /* Default values: Sidebar load hobar age egulo kaj korbe */
     --arabic-font-size: 24px;
     --translation-font-size: 16px;
     --arabic-font-family: 'Amiri', serif;
   }
 
   body {
-    @apply bg-black text-white; /* Background black rakha bhalo Quran app-er jonno */
+    @apply bg-black text-white; 
   }
 }
 
-/* Custom Utilities */
+
 @layer utilities {
   .font-arabic {
-    font-family: var(--arabic-font-family);
+    font-family: var(--arabic-font-family) !important;
     font-size: var(--arabic-font-size);
     line-height: 2.5;
   }
 }
 
-/* Scrollbar styling for Dark Mode */
+
 ::-webkit-scrollbar {
   width: 8px;
 }
