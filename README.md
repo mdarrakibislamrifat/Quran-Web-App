@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Quran Web Application 🕌
 
-## Getting Started
+A beautiful, responsive, and feature-rich Quran web application built with Next.js. Read, search, and explore the Holy Quran with a clean and modern interface.
 
-First, run the development server:
+![Quran Web App](https://img.shields.io/badge/Next.js-16.2.4-black?logo=next.js)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.0-38B2AC?logo=tailwind-css)
+![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue?logo=typescript)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Live Demo
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**🌐 [View Live Demo](https://quran-web-app-gray.vercel.app/)**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+## 🚀 Features
 
-To learn more about Next.js, take a look at the following resources:
+- ✅ **Complete Quran** - All 114 Surahs with Arabic text and English translation
+- ✅ **Surah List** - Beautiful grid/list view with Arabic & English names
+- ✅ **Ayah Page** - Clean reading experience with verse-by-verse display
+- ✅ **Powerful Search** - Search any Ayah by translation text
+- ✅ **Settings Panel** - 
+  - Multiple Arabic font options
+  - Adjustable Arabic font size
+  - Adjustable Translation font size
+  - Settings saved in localStorage
+- ✅ Fully **Responsive Design** (Mobile + Desktop)
+- ✅ Fast performance with **Static Site Generation (SSG)**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠️ Tech Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Frontend**: Next.js 16 (App Router) + React 19 + TypeScript
+- **Styling**: Tailwind CSS v4
+- **Icons**: Lucide React
+- **Deployment**: Vercel
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📂 Project Structure
