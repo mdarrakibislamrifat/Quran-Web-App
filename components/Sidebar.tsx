@@ -1,13 +1,15 @@
 "use client";
-import  { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 const Sidebar = () => {
   const [arabicFont, setArabicFont] = useState('font-amiri');
   const [arabicFontSize, setArabicFontSize] = useState(24);
   const [translationFontSize, setTranslationFontSize] = useState(16);
+  const [mounted, setMounted] = useState(false);
 
-  // for Settings persist 
+  //  Settings persist 
   useEffect(() => {
+    setMounted(true);
     const savedSettings = localStorage.getItem('quran-settings');
     if (savedSettings) {
       const { font, aSize, tSize } = JSON.parse(savedSettings);
@@ -16,6 +18,16 @@ const Sidebar = () => {
       setTranslationFontSize(tSize);
     }
   }, []);
+
+  useEffect(() => {
+    if (mounted) {
+      document.documentElement.style.setProperty('--arabic-font-size', `${arabicFontSize}px`);
+      document.documentElement.style.setProperty('--translation-font-size', `${translationFontSize}px`);
+      document.documentElement.style.setProperty('--arabic-font-family', arabicFont === 'font-amiri' ? "'Amiri', serif" : "'Scheherazade New', serif");
+    }
+  }, [arabicFontSize, translationFontSize, arabicFont, mounted]);
+
+  if (!mounted) return null;
 
   const saveSettings = (font: string, aSize: number, tSize: number) => {
     localStorage.setItem('quran-settings', JSON.stringify({ font, aSize, tSize }));
