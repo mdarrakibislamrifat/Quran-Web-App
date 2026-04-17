@@ -1,11 +1,13 @@
 "use client";
 import { useState, useEffect } from 'react';
+import { Settings, X } from 'lucide-react';
 
 const Sidebar = () => {
   const [arabicFont, setArabicFont] = useState('font-amiri');
   const [arabicFontSize, setArabicFontSize] = useState(24);
   const [translationFontSize, setTranslationFontSize] = useState(16);
   const [mounted, setMounted] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   //  Settings persist 
   useEffect(() => {

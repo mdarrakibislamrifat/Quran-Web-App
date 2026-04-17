@@ -14,7 +14,7 @@ export default async function HomePage() {
   const surahs = await getSurahs();
 
   return (
-    <div className="max-w-5xl mx-auto">
+    <div className="max-w-7xl mx-auto">
       <h1 className="text-3xl font-bold mb-8 text-center">Al-Quran Surah List</h1>
       
       {/* Search Input (Amra pore logic add korbo) */}
