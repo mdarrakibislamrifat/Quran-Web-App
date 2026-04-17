@@ -34,7 +34,7 @@ export default function RootLayout({
       >
         <div className="flex min-h-screen">
           {/* Main Content Area */}
-          <main className="flex-1 mr-64 p-6"> 
+          <main className="flex-1 p-4 md:p-6 lg:mr-72">
             {children}
           </main>
 
