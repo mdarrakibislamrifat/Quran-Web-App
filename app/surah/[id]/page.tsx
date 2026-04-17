@@ -1,4 +1,5 @@
 
+import ScrollToAyah from "@/components/ScrollToAyah";
 import Link from "next/link";
 
 async function getSurahDetail(id: string) {
@@ -24,13 +25,14 @@ export default async function SurahDetail({
 
   return (
     <div className="max-w-4xl mx-auto p-4 bg-black min-h-screen text-white">
+        <ScrollToAyah />
       <Link href="/" className="text-green-500 mb-8 inline-block hover:underline font-semibold">
         ← Back to Surah List
       </Link>
 
       <div className="space-y-12 pb-20">
         {verses.map((verse: any) => (
-          <div key={verse.id} className="pb-10 border-b border-gray-800 last:border-0">
+          <div key={verse.id} id={`ayah-${verse.verse_number}`} className="pb-10 border-b border-gray-800 last:border-0">
             {/* Arabic Text */}
             <div className="flex flex-col items-end w-full mb-6">
               <p className="text-right leading-[3] font-arabic " translate="no" 
