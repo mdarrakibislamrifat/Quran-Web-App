@@ -18,7 +18,7 @@
 
 @layer utilities {
   .font-arabic {
-    font-family: var(--arabic-font-family) !important;
+    font-family: var(--arabic-font-family) !important; 
     font-size: var(--arabic-font-size);
     line-height: 2.5;
   }

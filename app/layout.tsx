@@ -16,7 +16,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Quran Web App",
   description: "Read the Holy Quran",
+  other: {
+    google: "notranslate",
+  },
 };
+
 
 export default function RootLayout({
   children,
@@ -24,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full">
+    <html lang="ar" className="h-full" translate="no">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased h-full`}
       >
