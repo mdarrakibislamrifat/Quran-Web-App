@@ -33,4 +33,4 @@ A beautiful, responsive, and feature-rich Quran web application built with Next.
 - **Icons**: Lucide React
 - **Deployment**: Vercel
 
-## 📂 Project Structure
+
